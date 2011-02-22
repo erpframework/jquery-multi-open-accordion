@@ -21,6 +21,7 @@
 				$this.addClass('ui-accordion ui-widget ui-helper-reset ui-accordion-icons');
 				$h3.each(function(index){
 					var $this = $(this);
+					$this.children('a').attr('href', 'javascript:void()');
 					$this.addClass('ui-accordion-header ui-helper-reset ui-state-default ui-corner-all').prepend('<span class="ui-icon ui-icon-triangle-1-e"></span>');
 					if(isActive(index)) {
 						showTab($this)
